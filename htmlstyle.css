@@ -1,0 +1,179 @@
+body, html {
+    width:100%; 
+    height:100%; 
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+}
+header {
+    position: fixed; 
+    z-index:1; 
+    background:white; 
+    width:100%;
+    display:flex;
+    align-items: center;
+    height: 50px;
+    top:0;
+}
+#headerLogo {
+    margin: 0px 190px 0px; 
+    padding: 5px 0px 5px; 
+}
+header .pwrapper {
+    flex-grow:1; 
+    text-align:right; 
+    margin-right:200px; 
+    font-size: 12px; 
+    font-family: Trebuchet MS, sans-serif;
+}
+.pwrapper a {
+    text-decoration: none;
+    color:black;
+    padding-bottom:16px;
+}
+.pwrapper a:hover{
+    border-bottom:2px solid #6694f4;
+}
+.page1 {
+    height: 100%;
+    min-height:300pt;
+    text-align: center; 
+    filter: brightness(100%); 
+    margin-top: -21px; 
+    background-size: cover; 
+    background-image: url("working.png"); 
+}
+h1 {
+    text-align: center; 
+    font-family: Trebuchet MS, sans-serif;
+    padding-top:150px; 
+    color: white;
+}
+#watchButton {
+    display: inline; 
+    margin: 110px; 
+    border-radius: 150px; 
+    width: 80px; 
+    height: 30px; 
+    background-color: #6694f4; 
+    color: white; 
+    border: hidden; 
+    transition: 0.2s; 
+    font-size: 11px; 
+    font-weight: bold;
+}
+#watchButton:hover {
+    background-color: white; 
+    color: #6694f4; 
+    border: hidden; 
+    height: 27px; 
+    width: 72px; 
+    font-size: 9.9px; 
+    transition:0.2s;
+}
+.page2 {
+    min-height: calc(100% - 50px); 
+    background-image: linear-gradient(90deg, white, rgb(212, 212, 212));
+    text-align: right;
+    display:flex;
+}
+#page2text {
+    font-family: Trebuchet MS, sans-serif; 
+    color: rgb(65, 65, 65); 
+    font-size: 30px; 
+    font-weight: bold;
+    margin-top: 0; 
+    text-align: center; 
+}
+#page2img {
+    padding-bottom: 100px; 
+    margin-left: 80px;
+    padding-top: 100px;
+}
+.page2left {
+    display: inline-block;
+    text-align: left;
+    margin:0;
+    display: flex;
+    flex-direction: column; align-content: center; justify-content: center;
+}
+.page2right {
+    display: inline-block;
+    text-align: right;
+    margin:0;
+    display: flex;
+    flex-direction: column; align-content: center; justify-content: center;
+}
+.page2right, .page2left{
+    flex: .5;
+    max-width: 50%;
+}
+#page2para {
+    font-family: Trebuchet MS, sans-serif; 
+    color: rgb(65, 65, 65); 
+    font-size: 16px; 
+    /*font-weight: bold;*/
+    margin-top: 0; 
+    text-align: center; 
+    max-width:400px;
+    margin: 0 auto;
+}
+#applyButton {
+    display: inline; 
+    border-radius: 150px; 
+    width: 80px; 
+    height: 30px; 
+    background-color: #6694f4; 
+    color: white; 
+    border: hidden;
+    transition: 0.2s; 
+    font-size: 11px; 
+    font-weight: bold;
+    margin: 33px auto;
+}
+#applyButton:hover {
+    background-color: white; 
+    color: #6694f4; 
+    border: hidden; 
+    height: 27px; 
+    width: 72px; 
+    font-size: 9.9px; 
+    transition:0.2s;
+    margin-top: 36px;
+}
+#page1text {
+    font-family: Trebuchet MS, sans-serif; 
+    color: white; 
+    font-size: 15.5px; 
+    max-width:500px;
+    margin: 40px auto;
+}
+.page3 {
+    min-height: calc(100% - 30px);
+    background-color: #6693f4;
+    opacity: 1;
+}
+#jobOpen {
+    color: white;
+    margin-block-start: 0;
+    padding-top: 100px;
+}
+nav ul {
+        height:300px; 
+        width:80%;
+        overflow:hidden; 
+        overflow-y:scroll;
+        margin: 50px auto 0;
+        list-style-type: none;
+        font-family: Trebuchet MS, sans-serif; 
+        color: white;
+        line-height: 50px;
+}
+nav li:first-of-type{
+    border: 3px solid white; border-radius: 3px; background-color: #88aaf3;
+}
+nav li:not(:first-of-type){
+    border: 3px solid white; border-radius: 3px; border-top: none !important; background-color: #88aaf3;
+    white-space: nowrap;
+    overflow-x:scroll;
+}
